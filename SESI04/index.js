@@ -39,51 +39,23 @@ app.patch('/patch', (req, res) => {
     res.send('Ini halaman patch')
 })
 
-// app.put('/users', (request, response) =>{
-//     const dataJson = []
-//     const dataFromClient = request.body
-    
-//     for(let i = 0; i < dataFromClient.length; i++) {
-//         dataJson.push(dataFromClient[i])
-//     }
 
-// app.put('/users', (request, response) =>{
-//     const dataJson = []
-//     const dataFromClient = request.body
-    
-//     for(let i = 0; i < dataFromClient.length; i++) {
-//         dataJson.push(dataFromClient[i])
-//     }
-
-//     fs.writeFile('data.json', JSON.stringify(dataJson), (err)=>{
-//         if(err) {
-//             response.json({
-//                 status: "Gagal"
-//             })
-//         }else {
-//             response.json({
-//                 status: "Berhasil"
-//             })
-//         }
+// app.put('/put/:id', (req, res) => {
+//     let data = ini[req.params.id - 1]
+//     data = JSON.stringify({
+//         nama: (req.body.nama === undefined) ? JSON.parse(data) : req.body.nama,  
+//         email: (req.body.email === undefined) ? JSON.parse(data) : req.body.email,  
+//         alamat: (req.body.alamat === undefined) ? JSON.parse(data) : req.body.alamat  
 //     })
-
-
-app.put('/put/:id', (req, res) => {
-    let data = ini[req.params.id - 1]
-    data = JSON.stringify({
-        nama: (req.body.nama === undefined) ? JSON.parse(data) : req.body.nama,  
-        email: (req.body.email === undefined) ? JSON.parse(data) : req.body.email,  
-        alamat: (req.body.alamat === undefined) ? JSON.parse(data) : req.body.alamat  
-    })
-    // console.log(JSON.parse(data));
-    fs.writeFile('./ini.json', JSON.stringify(data, null, 2), () => {
-        console.log('Success edit data');
-    })
-    res.status(200).json({
-        status: 'success',
-        message: 'Success edit data'
-    })
-})
+//     // console.log(JSON.parse(data));
+//     fs.writeFile('./ini.json', JSON.stringify(data, null, 2), () => {
+//         console.log('Success edit data');
+//     })
+//     res.status(200).json({
+//         status: 'success',
+//         message: 'Success edit data'
+//     })
+// })
 
 app.delete('/delete/:id', (req, res) => {
     if (!req.params.id || req.params.id > ini.length) {
