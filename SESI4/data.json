@@ -1,0 +1,14 @@
+[
+    {
+      "id_pengguna": 1,
+      "nama": "M. Karim",
+      "email": "sibli@gmail.com",
+      "alamat": "probolinggo"
+    },
+    {
+      "id_pengguna": 2,
+      "nama": "M. Hafid",
+      "email": "sibli@gmail.com",
+      "alamat": "probolinggo"
+    }
+  ]

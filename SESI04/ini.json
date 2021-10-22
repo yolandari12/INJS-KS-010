@@ -1,0 +1,20 @@
+[
+  {
+    "id_pengguna": 1,
+    "nama": "M. Karim",
+    "email": "sibli@gmail.com",
+    "alamat": "probolinggo"
+  },
+  {
+    "id_pengguna": 2,
+    "nama": "M. Hafid",
+    "email": "sibli@gmail.com",
+    "alamat": "probolinggo"
+  },
+  {
+    "id_pengguna": 3,
+    "nama": "Yolanda",
+    "email": "yln@gmail.com",
+    "alamat": "lampung"
+  }
+]
