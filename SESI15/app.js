@@ -3,11 +3,14 @@ const app = express()
 const port = 3000
 const stylus = require("stylus")
 
-app.get("/some-css", (req, res){
-    const css = stylus(`
-    body
+app.get("/some-css", (req, res) => {
+  const css = stylus(`
+  body
     color:blue
-    `)
-    res.send(css)
+  `)
+  res.send(css)
 })
 
+app.listen(port, () => {
+  console.log("Listening on port:", port)
+})
